@@ -1,0 +1,23 @@
+app:
+  name: ordersx2w-app
+  namespace: devhub
+  cluster: .apps.cluster-gjtwp.gjtwp.sandbox221.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-mad/ordersx2w-app
+  org: devhub-mad
+  name: ordersx2w-app
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000/devhub
+  name: ordersx2w-app
+  tag: latest
+
+
+pipelineStorage:
+  pvcSize: 2Gi
+  storageClassName: ""
+
+targetEnvironment: dev
+env: []
